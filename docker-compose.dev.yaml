@@ -9,7 +9,9 @@ services:
   app:
     build:
       dockerfile: ./php/Dockerfile
-      target: app_dev
+      target: "${BUILD_TARGET:-app}"
+#      target: app
+#      target: app_dev
     volumes:
 #      - /var/www/html/vendor
       - ./app:/var/www/html

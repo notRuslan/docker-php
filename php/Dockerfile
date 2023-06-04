@@ -35,6 +35,7 @@ COPY ./app .
 # run composer dump-autoload --optimize
 RUN composer dump-autoload --optimize
 
+
 # Dev image
 # This stage is meant to be target-built into a separate image
 # https://docs.docker.com/develop/develop-images/multistage-build/#stop-at-a-specific-build-stage
