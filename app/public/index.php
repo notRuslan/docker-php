@@ -3,7 +3,7 @@
 use App\Repository\TranslationRepository;
 
 //xdebug_info();
-phpinfo();
+//phpinfo();
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $client = \Symfony\Component\Cache\Adapter\RedisAdapter::createConnection(
