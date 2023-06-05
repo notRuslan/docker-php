@@ -16,3 +16,9 @@ composer dump-autoload
 
 ### XDEBUG
 XDEBUG_MODE=debug docker compose -f docker-compose.dev.yaml up -d
+
+### Build image 
+docker build --target app -t fitter73/php-composer:1.0 -f ./php/Dockerfile .
+
+### push image
+docker push fitter73/php-composer:1.0
